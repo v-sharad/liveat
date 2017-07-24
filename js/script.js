@@ -17,7 +17,7 @@ function loadData() {
     var street = $('#street').val();
     //console.log(street);
     var address = street.replace(/ /g,'%20')+','+city.replace(/ /g,'%20');
-    var streetViewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=600x300&location='+address;
+    var streetViewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=600x300&api-key=AIzaSyBRaA9qlUv0p5jcwU-6IocZ1bdXk_8I3VE&location='+address;
     $greeting.text("So you want to live at " + street+', '+ city + "?");
     $body.append('<img class="bgimg" src= "'+ streetViewUrl +'">');
     //console.log('<img class="bgimg" src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location='+street+','+city+'>');
